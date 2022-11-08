@@ -16,3 +16,7 @@ sudo systemctl start elasticsearch.service
 
 ##Superuser password reset##
 sudo /usr/share/elasticsearch/bin/elasticsearch-reset-password --batch -u  elastic  > /tmp/elastic.txt
+
+##Outside avaiable##
+sudo apt install awscli -y
+sudo aws s3 cp /tmp/elastic.txt s3://bucket-for-lambda-test

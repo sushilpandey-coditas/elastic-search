@@ -14,7 +14,7 @@ resource "aws_instance" "elastic" {
 }
 
 locals {
-  key_name = "ssh-keys/${var.environment}-elstic-keypair.pem"
+  key_name = "ssh-keys/${var.environment}-elasticsearch-keypair.pem"
 }
 
 module "key_pair" {

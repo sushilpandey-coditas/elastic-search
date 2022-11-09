@@ -15,7 +15,8 @@ sudo systemctl enable --now elasticsearch.service
 sudo systemctl start elasticsearch.service
 
 ##Superuser password reset##
-sudo /usr/share/elasticsearch/bin/elasticsearch-reset-password --batch -u  elastic  > /tmp/elastic.txt
+date > /tmp/elastic.txt
+sudo /usr/share/elasticsearch/bin/elasticsearch-reset-password --batch -u  elastic  >> /tmp/elastic.txt
 
 ##Outside avaiable##
 sudo apt install awscli -y

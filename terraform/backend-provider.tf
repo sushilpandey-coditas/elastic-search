@@ -1,5 +1,9 @@
 terraform {
-
+  backend "s3" {
+    bucket  = "terraform-elastic-state"
+    key     = "state/terraform.tfstate"
+    region  = "us-east-1"
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -7,7 +11,6 @@ terraform {
     }
   }
 }
-
 provider "aws" {
   region  = "us-east-1"
 }

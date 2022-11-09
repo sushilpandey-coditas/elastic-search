@@ -20,4 +20,4 @@ sudo /usr/share/elasticsearch/bin/elasticsearch-reset-password --batch -u  elast
 
 ##Outside avaiable##
 sudo apt install awscli -y
-sudo aws s3 cp /tmp/elastic.txt s3://bucket-for-lambda-test
+sudo aws s3 cp /tmp/elastic_search_password.txt s3://bucket-for-lambda-test
